@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>instruction</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link href="/static/bootstrap.min.css" rel="stylesheet">
+        <link href="/static/material-dash.css" rel="stylesheet">
+        <link href="/static/animate.min.css" rel="stylesheet">
+         <link href="/css/mdb.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/fakeLoader.css">
+    <script type="text/javascript">
+
+    ImageArrayFeaturea = new Array();
+    ImageArrayFeaturea[0] = 'featurea1.png';
+    ImageArrayFeaturea[1] = 'featurea2.png';
+    ImageArrayFeaturea[2] = 'featurea3.png';
+    ImageArrayFeaturea[3] = 'featurea4.png';
+    ImageArrayFeaturea[4] = 'featurea5.png';
+    ImageArrayFeaturea[5] = 'featurea6.png';
+    ImageArrayFeatureb = new Array();
+    ImageArrayFeatureb[0] = 'featureb1.png';
+    ImageArrayFeatureb[1] = 'featureb2.png';
+    ImageArrayFeatureb[2] = 'featureb3.png';
+    ImageArrayFeatureb[3] = 'featureb4.png';
+    ImageArrayUser = new Array();
+    ImageArrayUser[0] = 'user0.png';
+    ImageArrayUser[1] = 'user1.png';
+    ImageArrayUser[2] = 'user2.png';
+    ImageArrayUser[3] = 'user3.jpeg';
+    ImageArrayUser[4] = 'user4.jpeg';
+    ImageArrayUser[5] = 'user5.jpeg';
+    ImageArrayUser[6] = 'user6.jpeg';
+    ImageArrayUser[7] = 'user7.jpeg';
+    ImageArrayUser[8] = 'user8.jpeg';
+    ImageArrayUser[9] = 'user9.jpeg';
+
+
+function getRandomImageUser() {
+    var numUser = Math.floor( Math.random() * 6);
+    var imgUser = ImageArrayUser[numUser];
+     document.getElementById("randImageUser").innerHTML = ('<img src="' + '../static/user/' + imgUser + '" width="250px">')
+}
+function getRandomImageFa() {
+    var numFa = Math.floor( Math.random() * 6);
+    var imgFa = ImageArrayFeaturea[numFa];
+     document.getElementById("randImageFeaturea").innerHTML = ('<img src="' + '../static/' + imgFa + '" width="250px">')
+}
+function getRandomImageFb() {
+    var numFb = Math.floor( Math.random() * 4);
+    var imgFb = ImageArrayFeatureb[numFb];
+     document.getElementById("randImageFb").innerHTML = ('<img src="' + '../static/' + imgFb + '" width="250px">')
+}
+function getRandomImageS() {
+    var numS = Math.floor(Math.random() * 6);
+    var imgS = ImageArrayS[numS];
+    document.getElementById("randImageS").innerHTML = ('<img src="' + '../static/' + imgS + '" width="250px">')
+}
+
+    </script>
+</head>
+<body onload="getRandomImageUser(); getRandomImageFa(); getRandomImageFb(); getRandomImageS(); ">
+<div class="container  ">
+
+            <div >
+               <label>
+                    <input type="checkbox"  />
+                    <div class="card" style="top: 200px; left: 200px">
+                        <div class="front">
+                        <div class="view view-tenth">
+                            Customer
+                            <div class="mask">
+                                <h2>Customer</h2>
+                                <p>The user is your target market for whom you will be brainstorming the possible problems and solutions.</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="back">
+                            <div id="randImageUser"></div>
+                            </div>
+                    </div>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox"  />
+                    <div class="card " style="top: 200px; left: 800px">
+                        <div class="front">
+                        <div class="view view-tenth">
+                            Plan with It
+                            <div class="mask">
+                                <h2>Plan with It</h2>
+                                <p>This card is a tool that you will use as a catalyst to support and develop your ideas to build solutions for your assigned user (target market).</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="back">
+                              <div id="randImageFeaturea"></div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox"  />
+                    <div class="card "style="top: 500px; left: 200px">
+                        <div class="front">
+                            <div class="view view-tenth">
+                          Plan with It
+                        <div class="mask">
+                                <h2>Plan with It</h2>
+                                <p>The features are tools that you will use as a catalyst to support and develop your ideas to build solutions for your assigned user (target market).</p>
+                        </div>
+                            </div>
+                        </div>
+                        <div class="back"><div id="randImageFb"></div></div>
+                    </div>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox"  />
+                    <div class="card " style="top: 500px; left: 800px">
+                        <div class="front">
+                            <div class="view view-tenth">
+                            Role Play
+                                <div class="mask">
+                                <h2>Role Play</h2>
+                                <p>The booster card can help point you in a positive direction and perspective on how you can equip your business idea with a unique selling point. It is not mandatory to use but just a helpful tool to help you with your idea thinking process.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back" >
+                            <div id="randImageS"></div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+</div>
+<div class="wrap">
+  <a href="QandA.html" class="button rollover" onclick="mycard(); deletecookie()" >
+    <span class="roll-text">Finish</span>
+    <span class="roll-text">Let's Go</span>
+  </a>
+</div>
+
+
+<style>
+    .container{
+        color: black;
+    }
+body {
+  background: #F17563;
+  font-size: 50px;
+}
+
+label {
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  display: block;
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+  z-index: 20;
+}
+
+.card div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #FFF;
+  text-align: center;
+  line-height: 200px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 2px;
+}
+
+.card .back {
+  background: #222;
+  color: #FFF;
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+
+label:hover .card {
+  -webkit-transform: rotateX(20deg);
+  transform: rotateX(20deg);
+  box-shadow: 0 20px 20px rgba(50, 50, 50, 0.2);
+}
+
+input {
+  display: none;
+}
+
+:checked + .card {
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+}
+
+label:hover :checked + .card {
+  transform: rotateX(160deg);
+  -webkit-transform: rotateX(160deg);
+  box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2);
+}
+</style>
+<style>
+.view {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+}
+.view .mask, .view .content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+}
+.view img {
+    display: block;
+    position: relative
+}
+.view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0
+}
+.view p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 15px;
+    position: relative;
+    top:30px;
+    color: #fff;
+    padding: 0px 20px 20px;
+    text-align: center;
+    line-height: 20px;
+
+}
+.view-tenth img {
+	transform: scaleY(1);
+	transition: all 0.7s ease-in-out;
+}
+.view-tenth .mask {
+    background-color: rgba(255, 231, 179, 0.7);
+    transition: all 0.5s linear;
+    opacity: 0;
+}
+.view-tenth h2{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+    transform: scale(0);
+    color: #333;
+    transition: all 0.5s linear;
+    opacity: 0;
+}
+.view-tenth p {
+    color: #333;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s linear;
+}
+.view-tenth a.info {
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s linear;
+}
+.view-tenth:hover img {
+	transform: scale(10);
+    opacity: 0;
+}
+.view-tenth:hover .mask {
+	opacity: 1;
+}
+.view-tenth:hover h2,
+.view-tenth:hover p,
+.view-tenth:hover a.info{
+    transform: scale(1);
+    opacity: 1;
+}
+
+</style>
+<style>
+
+.wrap {
+  position: relative;
+    top: 650px;
+    height: 100px;
+  width: 200px;
+  margin: auto;
+    color: #1B5E20;
+}
+
+.button {
+  background-color: transparent;
+  border: 2px solid #1B5E20;
+  border-radius: 4px;
+  display: inline-block;
+  color: #1B5E20;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  height: 40px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  margin: 5px;
+  overflow: hidden;
+  padding: 0 22px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all .2s ease-in-out;
+}
+.button:hover{
+    background-color:#1B5E20;
+}
+
+.roll-text {
+  display: block;
+  position: relative;
+  transition: all 420ms cubic-bezier(.175,.885,.32,1.275);
+}
+
+.roll-text:last-child {
+  color: #fff;
+}
+
+.rollover:hover .roll-text:first-child {
+  margin-top: -38px;
+}
+</style>
+</body>
+</html>
